@@ -6,6 +6,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { Route, RouterModule } from '@angular/router';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { CoverProfileComponent } from './components/cover-profile/cover-profile.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 const routes: Route[] = [
@@ -21,7 +22,8 @@ const routes: Route[] = [
     AppComponent,
     NavbarComponent,
     AboutMeComponent,
-    CoverProfileComponent
+    CoverProfileComponent,
+    FooterComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
