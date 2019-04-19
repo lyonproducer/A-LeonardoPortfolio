@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+.nav-link{
+
+  color:#28808D !important;
+
+}
+
+
+.title-color{
+
+  color:#4D8088;
+  
+}
+
+.bg-alter{
+
+  background-color: #426A8C !important;
+  border-radius: 10px;
+  width: 150px;
+  height: 5px;
+  float:right;
+}

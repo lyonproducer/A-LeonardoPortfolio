@@ -1,0 +1,12 @@
+.banner-color{
+
+  background: rgba(110,207,160,1);
+  background: -moz-linear-gradient(left, rgba(110,207,160,1) 0%, rgba(3,163,181,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(110,207,160,1)), color-stop(100%, rgba(3,163,181,1)));
+  background: -webkit-linear-gradient(left, rgba(110,207,160,1) 0%, rgba(3,163,181,1) 100%);
+  background: -o-linear-gradient(left, rgba(110,207,160,1) 0%, rgba(3,163,181,1) 100%);
+  background: -ms-linear-gradient(left, rgba(110,207,160,1) 0%, rgba(3,163,181,1) 100%);
+  background: linear-gradient(to right, rgba(110,207,160,1) 0%, rgba(3,163,181,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ecfa0', endColorstr='#03a3b5', GradientType=1 );
+  
+}
