@@ -7,13 +7,15 @@ import { Route, RouterModule } from '@angular/router';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { CoverProfileComponent } from './components/cover-profile/cover-profile.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 
 const routes: Route[] = [
 
-  {path: '', redirectTo: '/index', pathMatch: 'full'},
+  {path: '', redirectTo: '/about-me', pathMatch: 'full'},
 
-  {path: 'index', component: AboutMeComponent},
+  {path: 'about-me', component: AboutMeComponent},
+  {path: 'skills', component: SkillsComponent},
 
 ];
 
@@ -23,7 +25,8 @@ const routes: Route[] = [
     NavbarComponent,
     AboutMeComponent,
     CoverProfileComponent,
-    FooterComponent
+    FooterComponent,
+    SkillsComponent
   ],
   imports: [
     RouterModule.forRoot(routes),

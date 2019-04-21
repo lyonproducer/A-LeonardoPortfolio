@@ -13,3 +13,9 @@
   padding: 10px;
   transition: 0.2s;
 }
+
+#myFooter .social-networks a:hover {
+  font-size: 35px;
+  color: #e6e0e0;
+  transition: 0.2s;
+}
