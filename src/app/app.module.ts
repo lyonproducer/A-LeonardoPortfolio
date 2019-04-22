@@ -8,6 +8,7 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { CoverProfileComponent } from './components/cover-profile/cover-profile.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 const routes: Route[] = [
@@ -16,6 +17,7 @@ const routes: Route[] = [
 
   {path: 'about-me', component: AboutMeComponent},
   {path: 'skills', component: SkillsComponent},
+  {path: 'contact', component: ContactComponent},
 
 ];
 
@@ -26,7 +28,8 @@ const routes: Route[] = [
     AboutMeComponent,
     CoverProfileComponent,
     FooterComponent,
-    SkillsComponent
+    SkillsComponent,
+    ContactComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
