@@ -1,0 +1,119 @@
+<div class="container pl-4 pt-4 pr-0 mb-5">
+
+
+  <h4 class="title-color">Experiencia</h4>
+  <div style="border-bottom: solid 2px #4D8088;"></div>
+
+  <mgl-timeline [ngClass]="{'color-title': true}" [toggle]="toggle" [alternate]="alternate" [side]="side">
+    <mgl-timeline-entry (expand)="onExpandEntry($event, i)">
+      <mgl-timeline-entry-header [ngClass]="{'header': true}" (click)="onHeaderClick($event)">
+        <div>Desarrollador Frontend - eCloud</div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content>
+        <div>
+          <div class="title-color p-2">
+            <p class="text-justify">
+                Participacion en proyecto de intercambio de divisas basado en Angular. Utilización de Api Rest, Validaciones y formularios avanzados. Modalidad Freelance.
+            </p> 
+          </div>
+        </div>
+      </mgl-timeline-entry-content>
+
+      <mgl-timeline-entry-dot [class]="color ? 'title-color' : 'accent'" [size]="size" (click)="onDotClick($event)">
+      </mgl-timeline-entry-dot>
+
+      <mgl-timeline-entry-side class="title-color text-left ml-4">Dic 2018 - Mar 2019</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+
+
+
+    <mgl-timeline-entry (expand)="onExpandEntry($event, i)">
+      <mgl-timeline-entry-header [ngClass]="{'header': true}" (click)="onHeaderClick($event)">
+        <div>Desarrollador Frontend - Imagina Colombia</div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content>
+        <div>
+          <div class="title-color p-2">
+            <p class="text-justify">
+              Participacion en proyecto FHIA basado en Quasar + Vue. Utilización de Api Rest, maquetación y utilización de indexed DB. Modalidad Freelance.
+            </p> 
+          </div>
+        </div>
+      </mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [class]="color ? 'title-color' : 'accent'" [size]="size" (click)="onDotClick($event)">
+      </mgl-timeline-entry-dot>
+      <mgl-timeline-entry-side class="title-color text-right pr-4">Dic 2018 - Feb 2019</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+
+
+    <mgl-timeline-entry (expand)="onExpandEntry($event, i)">
+      <mgl-timeline-entry-header [ngClass]="{'header': true}" (click)="onHeaderClick($event)">
+        <div>Desarrollador Frontend - Bigwave</div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content>
+        <div>
+          <div class="title-color p-2"> 
+            <p class="text-justify">Participacion en proyecto Ecommerce basado en Angular, aplicando el uso de Material Angular para su visual. consumo de Api Rest y realizacion de módulo administrativo. Modalidad Remota.</p> 
+          </div>
+        </div>
+      </mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'" [size]="size" (click)="onDotClick($event)">
+      </mgl-timeline-entry-dot>
+      <mgl-timeline-entry-side class="title-color text-left ml-4">Ago 2018 - Dic 2018</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+
+
+
+    <mgl-timeline-entry (expand)="onExpandEntry($event, i)">
+      <mgl-timeline-entry-header [ngClass]="{'header': true}" (click)="onHeaderClick($event)">
+        <div>Desarrollador FullStack - UNEG</div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content>
+        <div>
+            <div class="title-color p-2"> 
+              <p class="text-justify">Pasantia, realizacion de dos sistemas web basados en Laravel y Angular 6. Sistama de inventarios del departamento de produccion editorial y banco de imágenes del departamente de diseño gráfico. Modalidad Presencial. </p> 
+            </div>
+        </div>
+      </mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'" [size]="size" (click)="onDotClick($event)">
+      </mgl-timeline-entry-dot>
+      <mgl-timeline-entry-side class="title-color text-right pr-4">May 2018 - Oct 2018</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+
+
+    <mgl-timeline-entry (expand)="onExpandEntry($event, i)">
+      <mgl-timeline-entry-header [ngClass]="{'header': true}" (click)="onHeaderClick($event)">
+        <div>Redactor de Contenido - Vonkelemen</div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content>
+        <div>
+          <div class="title-color p-2"> 
+            <p class="text-justify">Redacción de lecciones con respecto a la produccion musical utilizando el software FL Studio. Modalidad Remota.</p> 
+          </div>
+        </div>
+      </mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'" [size]="size" (click)="onDotClick($event)">
+      </mgl-timeline-entry-dot>
+      <mgl-timeline-entry-side class="title-color text-left pl-4">Nov 2017 - May 2018</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+
+
+
+    <mgl-timeline-entry (expand)="onExpandEntry($event, i)">
+      <mgl-timeline-entry-header [ngClass]="{'header': true}" (click)="onHeaderClick($event)">
+        <div>Diseñador Grafico - Undermidnight</div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content>
+        <div>
+            <div class="title-color p-2"> 
+              <p class="text-justify">Pasantia, realizacion de dos sistemas web basados en Laravel y Angular 6. Sistama de inventarios del departamento de produccion editorial y banco de imágenes del departamente de diseño gráfico. Modalidad Presencial.</p> 
+            </div>
+        </div>
+      </mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'" [size]="size" (click)="onDotClick($event)">
+      </mgl-timeline-entry-dot>
+      <mgl-timeline-entry-side class="title-color text-right pr-4">Abr 2015 - Jul 2017</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+
+  </mgl-timeline>
+</div>

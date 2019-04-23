@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MglTimelineModule } from 'angular-mgl-timeline';
+import { VerticalTimelineModule } from 'angular-vertical-timeline';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -9,6 +12,7 @@ import { CoverProfileComponent } from './components/cover-profile/cover-profile.
 import { FooterComponent } from './components/footer/footer.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ExperienceComponent } from './components/experience/experience.component';
 
 
 const routes: Route[] = [
@@ -18,6 +22,7 @@ const routes: Route[] = [
   {path: 'about-me', component: AboutMeComponent},
   {path: 'skills', component: SkillsComponent},
   {path: 'contact', component: ContactComponent},
+  {path: 'experience', component: ExperienceComponent},
 
 ];
 
@@ -29,11 +34,15 @@ const routes: Route[] = [
     CoverProfileComponent,
     FooterComponent,
     SkillsComponent,
-    ContactComponent
+    ContactComponent,
+    ExperienceComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MglTimelineModule,
+    VerticalTimelineModule
   ],
   providers: [],
   bootstrap: [AppComponent]
