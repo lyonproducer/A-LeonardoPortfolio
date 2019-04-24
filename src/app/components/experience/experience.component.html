@@ -7,7 +7,7 @@
   <mgl-timeline [toggle]="toggle" [alternate]="alternate" [side]="side">
     <mgl-timeline-entry *ngFor="let entry of worksService.works; let i = index;" (expand)="onExpandEntry($event, i)">
 
-      <mgl-timeline-entry-header [ngClass]="{'text-white': selected,'header':true}" (click)="onHeaderClick($event)">
+      <mgl-timeline-entry-header [ngClass]="{'text-white': selected,'header':true}" (click)="onHeaderClick($event)" style="cursor:pointer;">
         <div>{{entry.header}}</div>
       </mgl-timeline-entry-header>
 
