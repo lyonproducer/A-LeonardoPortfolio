@@ -1,9 +1,36 @@
-<div class="container pl-4 pt-4 pr-0 mb-5">
+<div class="container animated fadeIn fast pl-4 pt-4 pr-0 mb-5">
 
 
   <h4 class="title-color">Experiencia</h4>
   <div style="border-bottom: solid 2px #4D8088;"></div>
 
+  <mgl-timeline [toggle]="toggle" [alternate]="alternate" [side]="side">
+    <mgl-timeline-entry *ngFor="let entry of worksService.works; let i = index;" (expand)="onExpandEntry($event, i)">
+
+      <mgl-timeline-entry-header [ngClass]="{'text-white': selected,'header':true}" (click)="onHeaderClick($event)">
+        <div>{{entry.header}}</div>
+      </mgl-timeline-entry-header>
+
+      <mgl-timeline-entry-content class="pb-0">
+        <div class="pb-0">
+          <div>{{entry.content}}</div>
+          <div class="row d-flex justify-content-end mt-2" *ngIf="entry.link">
+            <div class="col-4 text-white text-center pt-2 pb-2" style="background-color: teal">
+              <a class="text-white" href="{{entry.link}}" target="_blank">Ver Más</a> 
+            </div>
+          </div>
+
+        </div>
+      </mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'" 
+                              [size]="size"
+                              (click)="onDotClick($event)">
+      </mgl-timeline-entry-dot>
+      <mgl-timeline-entry-side>{{entry.date}}</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+  </mgl-timeline>
+
+  <!-- 
   <mgl-timeline [ngClass]="{'color-title': true}" [toggle]="toggle" [alternate]="alternate" [side]="side">
     <mgl-timeline-entry (expand)="onExpandEntry($event, i)">
       <mgl-timeline-entry-header [ngClass]="{'header': true}" (click)="onHeaderClick($event)">
@@ -115,5 +142,5 @@
       <mgl-timeline-entry-side class="title-color text-right pr-4">Abr 2015 - Jul 2017</mgl-timeline-entry-side>
     </mgl-timeline-entry>
 
-  </mgl-timeline>
+  </mgl-timeline> -->
 </div>

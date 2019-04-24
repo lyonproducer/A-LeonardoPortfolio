@@ -4,7 +4,7 @@
 
 
 mgl-timeline .mgl-timeline-line{
-  background-color: #4D8088;
+  background-color: #4D8088 !important;
 }
 
 .nav-link{
@@ -27,4 +27,10 @@ mgl-timeline .mgl-timeline-line{
   width: 150px;
   height: 5px;
   float:right;
+}
+
+mgl-timeline-entry-side {
+  /* background-color: #37474f; */
+  z-index: -1;
+  border-bottom: dotted 1px  #37474f;
 }

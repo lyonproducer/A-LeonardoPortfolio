@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ExperienceService } from 'src/app/services/experience.service';
 
 @Component({
   selector: 'app-experience',
@@ -7,11 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
 
-  constructor() { }
+  constructor(public worksService : ExperienceService) { }
 
   ngOnInit() {
   }
-  selected: boolean = false;
+
+
+  selected0: boolean = false;
   alternate: boolean = true;
   toggle: boolean = true;
   color: boolean = false;
@@ -38,12 +41,11 @@ export class ExperienceComponent implements OnInit {
   }
 
   onHeaderClick(event) {
-    /*
+    console.log('hola');
+    this.selected0=!this.selected0;
     if (!this.expandEnabled) {
       event.stopPropagation();
-      
     }
-    */
   }
 
   onDotClick(event) {
@@ -53,8 +55,7 @@ export class ExperienceComponent implements OnInit {
   }
 
   onExpandEntry(expanded) {
-    console.log(`Expand status of entry changed to  is selected ${this.selected}`)
-    this.selected=!this.selected;
+    console.log(`Expand status of entry changed to  is selected`)
   }
 
   toggleSide() {
