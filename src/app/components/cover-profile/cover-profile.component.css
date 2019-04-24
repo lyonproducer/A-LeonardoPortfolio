@@ -3,6 +3,7 @@
   background-color: #609DA7;
   border-color: #609DA7;
   width: 100%;
+  color:white;
 }
 
 .btn:hover{
@@ -10,4 +11,9 @@
   background-color: rgb(83, 136, 145);
   border-color: rgb(83, 136, 145);
  
+}
+
+.btn:focus, .btn.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(255, 255, 255);
 }
