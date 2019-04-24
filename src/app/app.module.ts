@@ -21,11 +21,11 @@ import { FormsModule } from '@angular/forms';
 const routes: Route[] = [
 
   {path: '', redirectTo: '/about-me', pathMatch: 'full'},
-
   {path: 'about-me', component: AboutMeComponent},
   {path: 'skills', component: SkillsComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'experience', component: ExperienceComponent},
+  {path: '**', redirectTo: '/', pathMatch: 'full'}
 
 ];
 
@@ -41,7 +41,7 @@ const routes: Route[] = [
     ExperienceComponent
   ],
   imports: [
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, {useHash:true} ),
     BrowserModule,
     BrowserAnimationsModule,
     MglTimelineModule,
