@@ -1,0 +1,40 @@
+{
+  "works" : 
+  [ 
+    {
+      "content" : "Realización, ajuste y actualizacion de diseño de las paginas web procar, pinkcar y procar_pincar, desarrollado en Laravel. Modalidad Remota.",
+      "date" : "May 2019 - Actualidad",
+      "header" : "Diseñador Web - Protector LLC",
+      "link" : "https://www.carprocarchile.com"
+    },
+    {
+    "content" : "Participacion en proyecto de intercambio de divisas basado en Angular. Utilización de Api Rest, Validaciones y formularios avanzados. Modalidad Freelance.",
+    "date" : "Dic 2018 - Mar 2019 ",
+    "header" : "Desarrollador Frontend - eCloud"
+  }, {
+    "content" : "Participacion en proyecto FHIA basado en Quasar + Vue. Utilización de Api Rest, maquetación y utilización de indexed DB. Modalidad Freelance.",
+    "date" : "Dic 2018 - Feb 2019",
+    "header" : "Desarrollador Frontend - Imagina Colombia",
+    "link" : "https://www.behance.net/gallery/79106073/FHIA-Quasar-Products-CMS"
+  }, {
+    "content" : "Participacion en proyecto Ecommerce basado en Angular, aplicando el uso de Material Angular para su visual. consumo de Api Rest y realizacion de módulo administrativo. Modalidad Remota.",
+    "date" : "Ago 2018 - Dic 2018",
+    "header" : "Desarrollador Frontend - Bigwave",
+    "link" : "https://www.behance.net/gallery/69929813/Angular-Ecommerce"
+  }, {
+    "content" : "Pasantia, realizacion de dos sistemas web basados en Laravel y Angular 6. Sistama de inventarios del departamento de produccion editorial y banco de imágenes del departamente de diseño gráfico. Modalidad Presencial.",
+    "date" : "May 2018 - Oct 2018",
+    "header" : "Desarrollador FullStack - UNEG",
+    "link" : "https://www.behance.net/gallery/71888337/Trabajos-de-diseno-Angular-Laravel"
+  }, {
+    "content" : "Redacción de lecciones con respecto a la produccion musical utilizando el software FL Studio. Modalidad Remota.",
+    "date" : "Nov 2017 - May 2018",
+    "header" : "Redactor de Contenido - Vonkelemen"
+  }, {
+    "content" : "Pasantia, realizacion de dos sistemas web basados en Laravel y Angular 6. Sistama de inventarios del departamento de produccion editorial y banco de imágenes del departamente de diseño gráfico. Modalidad Presencial.",
+    "date" : "Abr 2015 - Jul 2017",
+    "header" : "Diseñador Grafico - Undermidnight",
+    "link" : "https://www.behance.net/lyonincode"
+  } 
+  ]
+}
