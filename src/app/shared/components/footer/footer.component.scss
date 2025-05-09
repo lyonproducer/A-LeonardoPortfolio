@@ -1,0 +1,41 @@
+#myFooter .logo {
+  font-size: 20px;
+  color: #f9f9f9;
+  margin-right: 15px;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: #b7b5b5 !important;
+  transition: 0.2s;
+}
+
+a {
+  text-decoration: none;
+  color: #f9f9f9;
+}
+
+
+.social-networks a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  color: #f9f9f9;
+  margin: 10px;
+  transition: 0.2s;
+  width: 35px;
+  height: 35px;
+}
+
+#myFooter {
+  position: sticky;
+}
+
+@media screen and (min-height: 1300px) {
+  #myFooter {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  }
+}

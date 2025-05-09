@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+mgl-timeline .mgl-timeline-line {
+  background-color: #4d8088 !important;
+}
+
+.nav-link {
+  color: #28808d !important;
+}
+
+.title-color {
+  color: #4d8088;
+}
+
+.bg-alter {
+  background-color: #426a8c !important;
+  border-radius: 10px;
+  width: 150px;
+  height: 5px;
+  float: right;
+}
+
+mgl-timeline-entry-side {
+  /* background-color: #37474f; */
+  z-index: -1;
+  border-bottom: dotted 1px #37474f;
+}
