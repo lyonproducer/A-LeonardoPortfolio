@@ -9,6 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
 
+  selected0: boolean = false;
+  alternate: boolean = true;
+  toggle: boolean = true;
+  color: boolean = false;
+  size: number = 40;
+  expandEnabled: boolean = true;
+  side = 'left';
+
   constructor(
     // public worksService : ExperienceService
   ) { }
@@ -43,26 +51,26 @@ export class ExperienceComponent implements OnInit {
   //   this.entries.pop();
   // }
 
-  // onHeaderClick(event) {
-  //   console.log('hola');
-  //   this.selected0=!this.selected0;
-  //   if (!this.expandEnabled) {
-  //     event.stopPropagation();
-  //   }
-  // }
+  onHeaderClick(event: any) {
+    console.log('hola');
+    this.selected0 = !this.selected0;
+    if (!this.expandEnabled) {
+      event.stopPropagation();
+    }
+  }
 
-  // onDotClick(event) {
-  //   if (!this.expandEnabled) {
-  //     event.stopPropagation();
-  //   }
-  // }
+  onDotClick(event: any) {
+    if (!this.expandEnabled) {
+      event.stopPropagation();
+    }
+  }
 
-  // onExpandEntry(expanded) {
-  //   console.log(`Expand status of entry changed to  is selected`)
-  // }
+  onExpandEntry(expanded: any, index: number) {
+    console.log(`Expand status of entry changed to ${expanded}, index: ${index}`);
+  }
 
-  // toggleSide() {
-  //   this.side = this.side === 'left' ? 'right' : 'left';
-  // }
+  toggleSide() {
+    this.side = this.side === 'left' ? 'right' : 'left';
+  }
 
 }
