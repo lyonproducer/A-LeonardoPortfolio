@@ -7,7 +7,7 @@
     "build": "ng build --configuration production --base-href /a-lyon-portfolio/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy --base-href=/a-lyon-portfolio/ --name=main"
+    "deploy": "ng deploy --base-href=/a-lyon-portfolio/ --name=lyonproducer --email=hernandezleonardo085@gmail.com"
   },
   "private": true,
   "dependencies": {
