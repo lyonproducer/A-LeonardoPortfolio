@@ -1,0 +1,72 @@
+{
+  "NAVBAR": {
+    "ABOUT_ME": "Acerca de Mi",
+    "EXPERIENCE": "Experiencias",
+    "SKILLS": "Habilidades",
+    "CONTACT": "Contacto"
+  },
+  "COVER_PROFILE": {
+    "PERSONAL_INFO": "Información Personal",
+    "NATIONALITY": "Nacionalidad",
+    "NATIONALITY_VALUE": "Venezolana",
+    "BIRTHDAY": "Cumpleaños",
+    "BIRTHDAY_VALUE": "3/08/1997",
+    "RELATIONSHIP": "Relación",
+    "RELATIONSHIP_VALUE": "Soltero",
+    "LANGUAGES": "Idiomas",
+    "LANGUAGES_VALUE": "Español, Ingles",
+    "VIEW_CV": "Ver Curriculum Vitae"
+  },
+  "ABOUT_ME": {
+    "PROFILE": "Perfil",
+    "DESCRIPTION_1": "Hola, soy Leonardo Hernández, estudié cinco años de ingeniería informática en la Universidad UNEG, tengo unos tres años de experiencia laboral en desarrollo de aplicaciones web y móviles. Me considero un especialista en desarrollo frontend, con un poco de conocimiento de tecnologías backend. Fui diseñador desde pequeño haciendo diseño de flyers para fiestas, y portadas para artistas musicales. Luego comencé a construir wireframes y prototipos de pantalla para aplicaciones web y móviles.",
+    "DESCRIPTION_2": "Considero bastante oportuno e interesante comenzar a laborar en el ámbito en el que me he estado formando los ultimos años al cumplir con mi carrera universitaria y así, poder desempeñar todo lo que he aprendido hasta la fecha.",
+    "EDUCATION": "Educación",
+    "HIGH_SCHOOL": "Nuestra Señora de Lourdes - Bachiller",
+    "HIGH_SCHOOL_DESC": "La Unidad Educativa 'Nuestra Señora de Lourdes' se encuentra constituida por diferentes instalaciones, construidas con el fin de proporcionar una adecuada enseñanza y preparación tanto educativa, como moral y ciudadana; con el fin de que los estudiantes Lourdistas reciban aprendizaje sobre diferentes ámbitos y logren emplear sus conocimientos adquiridos.",
+    "HIGH_SCHOOL_YEARS": "2007 - 2014",
+    "UNIVERSITY": "Universidad Nacional Experimental de Guayana - Universidad",
+    "UNIVERSITY_DESC": "Universidad Venezolana, nacida el 18 de marzo de 1938, educadora, forjadora de organización y desarrollo en la Educación Superior; fundada el 9 de marzo de 1982 mediante decreto presidencial N° 1.432 del Presidente Luis Herrera Campins.",
+    "UNIVERSITY_YEARS": "2014 - 2019"
+  },
+  "SKILLS": {
+    "SOFTWARE": "Software",
+    "PROGRAMMING": "Programación",
+    "GENERAL": "General",
+    "DATABASES": "Bases de Datos",
+    "RELATIONAL": "RELACIONAL",
+    "NON_RELATIONAL": "NO RELACIONAL",
+    "FRAMEWORKS": "Frameworks",
+    "EXTRAS": "Extras"
+  },
+  "EXPERIENCE": {
+    "TITLE": "Experiencia",
+    "JOB_1_TITLE": "Desarrollador Frontend - eCloud",
+    "JOB_1_DESC": "Participacion en proyecto de intercambio de divisas basado en Angular. Utilización de Api Rest, Validaciones y formularios avanzados. Modalidad Freelance.",
+    "JOB_1_DATE": "Dic 2018 - Mar 2019",
+    "JOB_2_TITLE": "Desarrollador Frontend - Imagina Colombia",
+    "JOB_2_DESC": "Participacion en proyecto FHIA basado en Quasar + Vue. Utilización de Api Rest, maquetación y utilización de indexed DB. Modalidad Freelance.",
+    "JOB_2_DATE": "Dic 2018 - Feb 2019",
+    "JOB_3_TITLE": "Desarrollador Frontend - Bigwave",
+    "JOB_3_DESC": "Participacion en proyecto Ecommerce basado en Angular, aplicando el uso de Material Angular para su visual. consumo de Api Rest y realizacion de módulo administrativo. Modalidad Remota.",
+    "JOB_3_DATE": "Ago 2018 - Dic 2018",
+    "JOB_4_TITLE": "Desarrollador FullStack - UNEG",
+    "JOB_4_DESC": "Pasantia, realizacion de dos sistemas web basados en Laravel y Angular 6. Sistama de inventarios del departamento de produccion editorial y banco de imágenes del departamente de diseño gráfico. Modalidad Presencial.",
+    "JOB_4_DATE": "May 2018 - Oct 2018",
+    "JOB_5_TITLE": "Redactor de Contenido - Vonkelemen",
+    "JOB_5_DESC": "Redacción de lecciones con respecto a la produccion musical utilizando el software FL Studio. Modalidad Remota.",
+    "JOB_5_DATE": "Nov 2017 - May 2018",
+    "JOB_6_TITLE": "Diseñador Grafico - Undermidnight",
+    "JOB_6_DESC": "Pasantia, realizacion de dos sistemas web basados en Laravel y Angular 6. Sistama de inventarios del departamento de produccion editorial y banco de imágenes del departamente de diseño gráfico. Modalidad Presencial.",
+    "JOB_6_DATE": "Abr 2015 - Jul 2017"
+  },
+  "CONTACT": {
+    "TITLE": "Contacto",
+    "WHATSAPP": "WhatsApp",
+    "EMAIL": "Correo electrónico"
+  },
+  "FOOTER": {
+    "CONTACT_INFO": "Información de contacto",
+    "COPYRIGHT": "© 2025 Lyon Incode. Todos los derechos reservados."
+  }
+}

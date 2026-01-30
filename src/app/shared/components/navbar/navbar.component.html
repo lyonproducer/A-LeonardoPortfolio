@@ -16,25 +16,30 @@
   </button>
 
   <div class="collapse navbar-collapse" [ngClass]="{ show: navbarOpen }">
-    <div class="container navbar-nav w-100 d-flex justify-content-between">
+    <div class="container navbar-nav w-100 d-flex justify-content-between align-items-center">
       <a
         class="nav-item nav-link pointer active"
         routerLinkActive="solid"
         routerLink="/about-me"
-        >Acerca de Mi <span class="sr-only">(current)</span></a
+        >{{ 'NAVBAR.ABOUT_ME' | translate }} <span class="sr-only">(current)</span></a
       >
       <a
         class="nav-item nav-link pointer"
         routerLinkActive="solid"
         routerLink="/experience"
-        >Experiencias</a
+        >{{ 'NAVBAR.EXPERIENCE' | translate }}</a
       >
       <a class="nav-item nav-link pointer" routerLinkActive="solid" routerLink="/skills"
-        >Habilidades</a
+        >{{ 'NAVBAR.SKILLS' | translate }}</a
       >
       <a class="nav-item nav-link pointer" routerLinkActive="solid" routerLink="/contact"
-        >Contacto</a
+        >{{ 'NAVBAR.CONTACT' | translate }}</a
       >
+      <div class="nav-item ms-2">
+        <button class="btn btn-outline-secondary btn-sm" type="button" (click)="toggleLanguage()">
+          {{ currentLang === 'es' ? 'EN' : 'ES' }}
+        </button>
+      </div>
     </div>
   </div>
 </nav>
