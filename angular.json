@@ -46,6 +46,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/a-lyon-portfolio/",
               "budgets": [
                 {
                   "type": "initial",
