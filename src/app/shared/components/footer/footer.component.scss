@@ -29,13 +29,11 @@ a {
 }
 
 #myFooter {
-  position: sticky;
-}
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
 
-@media screen and (min-height: 1300px) {
-  #myFooter {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
+  @media screen and (max-width: 500px) {
+    position: relative;
   }
 }

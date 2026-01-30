@@ -31,3 +31,10 @@ mgl-timeline-entry-side {
 .pointer {
   cursor: pointer;
 }
+
+body {
+  padding-bottom: 200px;
+    @media screen and (max-width: 500px) {
+    padding-bottom: 0px;
+  }
+}
