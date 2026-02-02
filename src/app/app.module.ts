@@ -37,7 +37,7 @@ import { RouterModule } from '@angular/router';
   ],
   providers: [
     provideTranslateHttpLoader({
-      prefix: '/assets/i18n/',
+      prefix: 'assets/i18n/',
       suffix: '.json'
     })
   ],
