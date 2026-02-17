@@ -1,0 +1,323 @@
+<div class="container animated fadeIn fast ps-4 pt-4 pe-0 mb-5">
+
+
+  <h4 class="title-color">{{ 'EXPERIENCE.TITLE' | translate }}</h4>
+  <div style="border-bottom: solid 2px #4D8088;"></div>
+
+  <!-- CÓDIGO ANTERIOR DE FIREBASE - COMENTADO -->
+  <!-- <mgl-timeline [toggle]="toggle" [alternate]="alternate" [side]="side">
+    <mgl-timeline-entry *ngFor="let entry of worksService.works; let i = index;" (expand)="onExpandEntry($event, i)">
+
+      <mgl-timeline-entry-header [ngClass]="{'text-white': selected,'header':true}" (click)="onHeaderClick($event)" style="cursor:pointer;">
+        <div>{{entry.header}}</div>
+      </mgl-timeline-entry-header>
+
+      <mgl-timeline-entry-content class="pb-0">
+        <div class="pb-0">
+          <div>{{entry.content}}</div>
+          <div class="row d-flex justify-content-end mt-2" *ngIf="entry.link">
+            <div class="col-4 text-white text-center pt-2 pb-2" style="background-color: teal">
+              <a class="text-white" href="{{entry.link}}" target="_blank">Ver Más</a>
+            </div>
+          </div>
+
+        </div>
+      </mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'"
+                              [size]="size"
+                              (click)="onDotClick($event)">
+      </mgl-timeline-entry-dot>
+      <mgl-timeline-entry-side>{{entry.date}}</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+  </mgl-timeline> -->
+
+  <!-- CÓDIGO ANTERIOR COMENTADO -->
+  <!--
+  <mgl-timeline [ngClass]="{'color-title': true}" [toggle]="toggle" [alternate]="alternate" [side]="side">
+    <mgl-timeline-entry (expand)="onExpandEntry($event, i)">
+      <mgl-timeline-entry-header [ngClass]="{'header': true}" (click)="onHeaderClick($event)">
+        <div>Desarrollador Frontend - eCloud</div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content>
+        <div>
+          <div class="title-color p-2">
+            <p class="text-justify">
+                Participacion en proyecto de intercambio de divisas basado en Angular. Utilización de Api Rest, Validaciones y formularios avanzados. Modalidad Freelance.
+            </p>
+          </div>
+        </div>
+      </mgl-timeline-entry-content>
+
+      <mgl-timeline-entry-dot [class]="color ? 'title-color' : 'accent'" [size]="size" (click)="onDotClick($event)">
+      </mgl-timeline-entry-dot>
+
+      <mgl-timeline-entry-side class="title-color text-left ms-4">Dic 2018 - Mar 2019</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+
+
+
+    <mgl-timeline-entry (expand)="onExpandEntry($event, i)">
+      <mgl-timeline-entry-header [ngClass]="{'header': true}" (click)="onHeaderClick($event)">
+        <div>Desarrollador Frontend - Imagina Colombia</div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content>
+        <div>
+          <div class="title-color p-2">
+            <p class="text-justify">
+              Participacion en proyecto FHIA basado en Quasar + Vue. Utilización de Api Rest, maquetación y utilización de indexed DB. Modalidad Freelance.
+            </p>
+          </div>
+        </div>
+      </mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [class]="color ? 'title-color' : 'accent'" [size]="size" (click)="onDotClick($event)">
+      </mgl-timeline-entry-dot>
+      <mgl-timeline-entry-side class="title-color text-right pe-4">Dic 2018 - Feb 2019</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+
+
+    <mgl-timeline-entry (expand)="onExpandEntry($event, i)">
+      <mgl-timeline-entry-header [ngClass]="{'header': true}" (click)="onHeaderClick($event)">
+        <div>Desarrollador Frontend - Bigwave</div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content>
+        <div>
+          <div class="title-color p-2">
+            <p class="text-justify">Participacion en proyecto Ecommerce basado en Angular, aplicando el uso de Material Angular para su visual. consumo de Api Rest y realizacion de módulo administrativo. Modalidad Remota.</p>
+          </div>
+        </div>
+      </mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'" [size]="size" (click)="onDotClick($event)">
+      </mgl-timeline-entry-dot>
+      <mgl-timeline-entry-side class="title-color text-left ms-4">Ago 2018 - Dic 2018</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+
+
+
+    <mgl-timeline-entry (expand)="onExpandEntry($event, i)">
+      <mgl-timeline-entry-header [ngClass]="{'header': true}" (click)="onHeaderClick($event)">
+        <div>Desarrollador FullStack - UNEG</div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content>
+        <div>
+            <div class="title-color p-2">
+              <p class="text-justify">Pasantia, realizacion de dos sistemas web basados en Laravel y Angular 6. Sistama de inventarios del departamento de produccion editorial y banco de imágenes del departamente de diseño gráfico. Modalidad Presencial. </p>
+            </div>
+        </div>
+      </mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'" [size]="size" (click)="onDotClick($event)">
+      </mgl-timeline-entry-dot>
+      <mgl-timeline-entry-side class="title-color text-right pe-4">May 2018 - Oct 2018</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+
+
+    <mgl-timeline-entry (expand)="onExpandEntry($event, i)">
+      <mgl-timeline-entry-header [ngClass]="{'header': true}" (click)="onHeaderClick($event)">
+        <div>Redactor de Contenido - Vonkelemen</div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content>
+        <div>
+          <div class="title-color p-2">
+            <p class="text-justify">Redacción de lecciones con respecto a la produccion musical utilizando el software FL Studio. Modalidad Remota.</p>
+          </div>
+        </div>
+      </mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'" [size]="size" (click)="onDotClick($event)">
+      </mgl-timeline-entry-dot>
+      <mgl-timeline-entry-side class="title-color text-left ps-4">Nov 2017 - May 2018</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+
+
+
+    <mgl-timeline-entry (expand)="onExpandEntry($event, i)">
+      <mgl-timeline-entry-header [ngClass]="{'header': true}" (click)="onHeaderClick($event)">
+        <div>Diseñador Grafico - Undermidnight</div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content>
+        <div>
+            <div class="title-color p-2">
+              <p class="text-justify">Pasantia, realizacion de dos sistemas web basados en Laravel y Angular 6. Sistama de inventarios del departamento de produccion editorial y banco de imágenes del departamente de diseño gráfico. Modalidad Presencial.</p>
+            </div>
+        </div>
+      </mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'" [size]="size" (click)="onDotClick($event)">
+      </mgl-timeline-entry-dot>
+      <mgl-timeline-entry-side class="title-color text-right pe-4">Abr 2015 - Jul 2017</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+
+  </mgl-timeline> -->
+
+  <!-- NUEVAS EXPERIENCIAS ACTUALIZADAS DEL CV - ORDENADAS POR FECHA (más reciente primero) -->
+  <mgl-timeline [ngClass]="{'color-title': true}" [toggle]="toggle" [alternate]="alternate" [side]="side">
+
+    <!-- Job 1: Full-Stack Engineer - GREYDATA CONSULTING (Nov 2024 - Apr 2025) -->
+    <mgl-timeline-entry (expand)="onExpandEntry($event, 0)">
+      <mgl-timeline-entry-header [ngClass]="{'header': true}" (click)="onHeaderClick($event)">
+        <div>{{ 'EXPERIENCE.JOB_1_TITLE' | translate }}</div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content>
+        <div>
+          <div class="title-color p-2">
+            <p class="text-justify">{{ 'EXPERIENCE.JOB_1_DESC' | translate }}</p>
+          </div>
+        </div>
+      </mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [class]="color ? 'title-color' : 'accent'" [size]="size" (click)="onDotClick($event)">
+      </mgl-timeline-entry-dot>
+      <mgl-timeline-entry-side class="title-color text-left ms-4">{{ 'EXPERIENCE.JOB_1_DATE' | translate }}</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+
+    <!-- Job 2: Frontend Engineer - Helgen Technologies (Mar 2023 - Jan 2025) -->
+    <mgl-timeline-entry (expand)="onExpandEntry($event, 1)">
+      <mgl-timeline-entry-header [ngClass]="{'header': true}" (click)="onHeaderClick($event)">
+        <div>{{ 'EXPERIENCE.JOB_2_TITLE' | translate }}</div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content>
+        <div>
+          <div class="title-color p-2">
+            <p class="text-justify">{{ 'EXPERIENCE.JOB_2_DESC' | translate }}</p>
+          </div>
+        </div>
+      </mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [class]="color ? 'title-color' : 'accent'" [size]="size" (click)="onDotClick($event)">
+      </mgl-timeline-entry-dot>
+      <mgl-timeline-entry-side class="title-color text-right pe-4">{{ 'EXPERIENCE.JOB_2_DATE' | translate }}</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+
+    <!-- Job 3: Full-Stack Web3 Engineer - Blockchain Foundry (Jun 2021 - Jan 2023) -->
+    <mgl-timeline-entry (expand)="onExpandEntry($event, 2)">
+      <mgl-timeline-entry-header [ngClass]="{'header': true}" (click)="onHeaderClick($event)">
+        <div>{{ 'EXPERIENCE.JOB_3_TITLE' | translate }}</div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content>
+        <div>
+          <div class="title-color p-2">
+            <p class="text-justify">{{ 'EXPERIENCE.JOB_3_DESC' | translate }}</p>
+          </div>
+        </div>
+      </mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'" [size]="size" (click)="onDotClick($event)">
+      </mgl-timeline-entry-dot>
+      <mgl-timeline-entry-side class="title-color text-left ms-4">{{ 'EXPERIENCE.JOB_3_DATE' | translate }}</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+
+    <!-- Job 4: Mobile Engineer - 789.mx (Mar 2020 - Jun 2022) -->
+    <mgl-timeline-entry (expand)="onExpandEntry($event, 3)">
+      <mgl-timeline-entry-header [ngClass]="{'header': true}" (click)="onHeaderClick($event)">
+        <div>{{ 'EXPERIENCE.JOB_4_TITLE' | translate }}</div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content>
+        <div>
+          <div class="title-color p-2">
+            <p class="text-justify">{{ 'EXPERIENCE.JOB_4_DESC' | translate }}</p>
+          </div>
+        </div>
+      </mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'" [size]="size" (click)="onDotClick($event)">
+      </mgl-timeline-entry-dot>
+      <mgl-timeline-entry-side class="title-color text-right pe-4">{{ 'EXPERIENCE.JOB_4_DATE' | translate }}</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+
+    <!-- Job 5: Frontend Developer - eCloud (Dic 2018 - Mar 2019) -->
+    <mgl-timeline-entry (expand)="onExpandEntry($event, 4)">
+      <mgl-timeline-entry-header [ngClass]="{'header': true}" (click)="onHeaderClick($event)">
+        <div>{{ 'EXPERIENCE.JOB_5_TITLE' | translate }}</div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content>
+        <div>
+          <div class="title-color p-2">
+            <p class="text-justify">{{ 'EXPERIENCE.JOB_5_DESC' | translate }}</p>
+          </div>
+        </div>
+      </mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'" [size]="size" (click)="onDotClick($event)">
+      </mgl-timeline-entry-dot>
+      <mgl-timeline-entry-side class="title-color text-left ps-4">{{ 'EXPERIENCE.JOB_5_DATE' | translate }}</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+
+    <!-- Job 6: Frontend Developer - Imagina Colombia (Dic 2018 - Feb 2019) -->
+    <mgl-timeline-entry (expand)="onExpandEntry($event, 5)">
+      <mgl-timeline-entry-header [ngClass]="{'header': true}" (click)="onHeaderClick($event)">
+        <div>{{ 'EXPERIENCE.JOB_6_TITLE' | translate }}</div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content>
+        <div>
+          <div class="title-color p-2">
+            <p class="text-justify">{{ 'EXPERIENCE.JOB_6_DESC' | translate }}</p>
+          </div>
+        </div>
+      </mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'" [size]="size" (click)="onDotClick($event)">
+      </mgl-timeline-entry-dot>
+      <mgl-timeline-entry-side class="title-color text-right pe-4">{{ 'EXPERIENCE.JOB_6_DATE' | translate }}</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+
+    <!-- Job 7: Frontend Developer - Bigwave (Ago 2018 - Dic 2018) -->
+    <mgl-timeline-entry (expand)="onExpandEntry($event, 6)">
+      <mgl-timeline-entry-header [ngClass]="{'header': true}" (click)="onHeaderClick($event)">
+        <div>{{ 'EXPERIENCE.JOB_7_TITLE' | translate }}</div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content>
+        <div>
+          <div class="title-color p-2">
+            <p class="text-justify">{{ 'EXPERIENCE.JOB_7_DESC' | translate }}</p>
+          </div>
+        </div>
+      </mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'" [size]="size" (click)="onDotClick($event)">
+      </mgl-timeline-entry-dot>
+      <mgl-timeline-entry-side class="title-color text-left ps-4">{{ 'EXPERIENCE.JOB_7_DATE' | translate }}</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+
+    <!-- Job 8: FullStack Developer - UNEG (May 2018 - Oct 2018) -->
+    <mgl-timeline-entry (expand)="onExpandEntry($event, 7)">
+      <mgl-timeline-entry-header [ngClass]="{'header': true}" (click)="onHeaderClick($event)">
+        <div>{{ 'EXPERIENCE.JOB_8_TITLE' | translate }}</div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content>
+        <div>
+          <div class="title-color p-2">
+            <p class="text-justify">{{ 'EXPERIENCE.JOB_8_DESC' | translate }}</p>
+          </div>
+        </div>
+      </mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'" [size]="size" (click)="onDotClick($event)">
+      </mgl-timeline-entry-dot>
+      <mgl-timeline-entry-side class="title-color text-right pe-4">{{ 'EXPERIENCE.JOB_8_DATE' | translate }}</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+
+    <!-- Job 9: Content Writer - Vonkelemen (Nov 2017 - May 2018) -->
+    <mgl-timeline-entry (expand)="onExpandEntry($event, 8)">
+      <mgl-timeline-entry-header [ngClass]="{'header': true}" (click)="onHeaderClick($event)">
+        <div>{{ 'EXPERIENCE.JOB_9_TITLE' | translate }}</div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content>
+        <div>
+          <div class="title-color p-2">
+            <p class="text-justify">{{ 'EXPERIENCE.JOB_9_DESC' | translate }}</p>
+          </div>
+        </div>
+      </mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'" [size]="size" (click)="onDotClick($event)">
+      </mgl-timeline-entry-dot>
+      <mgl-timeline-entry-side class="title-color text-left ps-4">{{ 'EXPERIENCE.JOB_9_DATE' | translate }}</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+
+    <!-- Job 10: Graphic Designer - Undermidnight (Abr 2015 - Jul 2017) -->
+    <mgl-timeline-entry (expand)="onExpandEntry($event, 9)">
+      <mgl-timeline-entry-header [ngClass]="{'header': true}" (click)="onHeaderClick($event)">
+        <div>{{ 'EXPERIENCE.JOB_10_TITLE' | translate }}</div>
+      </mgl-timeline-entry-header>
+      <mgl-timeline-entry-content>
+        <div>
+          <div class="title-color p-2">
+            <p class="text-justify">{{ 'EXPERIENCE.JOB_10_DESC' | translate }}</p>
+          </div>
+        </div>
+      </mgl-timeline-entry-content>
+      <mgl-timeline-entry-dot [class]="color ? 'primary' : 'accent'" [size]="size" (click)="onDotClick($event)">
+      </mgl-timeline-entry-dot>
+      <mgl-timeline-entry-side class="title-color text-right pe-4">{{ 'EXPERIENCE.JOB_10_DATE' | translate }}</mgl-timeline-entry-side>
+    </mgl-timeline-entry>
+
+  </mgl-timeline>
+</div>

@@ -1,0 +1,69 @@
+<nav
+  class="navbar navbar-expand-lg navbar-light bg-light sticky-top"
+  style="box-shadow: 1px 7px 5px -2px rgba(0, 0, 0, 0.16); z-index: 2000"
+>
+  <button
+    (click)="toggleNavbar()"
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" [ngClass]="{ show: navbarOpen }">
+    <div class="container navbar-nav w-100 d-flex justify-content-between align-items-center">
+      <a
+        class="nav-item nav-link pointer active"
+        routerLinkActive="solid"
+        routerLink="/about-me"
+        >{{ 'NAVBAR.ABOUT_ME' | translate }} <span class="sr-only">(current)</span></a
+      >
+      <a
+        class="nav-item nav-link pointer"
+        routerLinkActive="solid"
+        routerLink="/experience"
+        >{{ 'NAVBAR.EXPERIENCE' | translate }}</a
+      >
+      <a class="nav-item nav-link pointer" routerLinkActive="solid" routerLink="/skills"
+        >{{ 'NAVBAR.SKILLS' | translate }}</a
+      >
+      <a class="nav-item nav-link pointer" routerLinkActive="solid" routerLink="/contact"
+        >{{ 'NAVBAR.CONTACT' | translate }}</a
+      >
+      <div class="nav-item ms-2">
+        <button class="btn btn-outline-secondary btn-sm" type="button" (click)="toggleLanguage()">
+          {{ currentLang === 'es' ? 'EN' : 'ES' }}
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav  w-100 d-flex justify-content-between">
+
+
+
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav> -->
