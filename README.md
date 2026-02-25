@@ -50,7 +50,7 @@ npm run build
    Este comando:
    - Compila el proyecto en modo producción
    - Sube los archivos a la rama `gh-pages`
-   - Configura el base-href en `/a-lyon-portfolio/`
+   - Configura el base-href en `/A-LeonardoPortfolio/`
 
 ### Configuración de GitHub Pages:
 
@@ -66,12 +66,12 @@ npm run build
 
 - El archivo `.nojekyll` evita que GitHub Pages procese los archivos con Jekyll
 - La carpeta `docs/` está excluida en `.gitignore` para evitar conflictos
-- El `base-href` está configurado en `/a-lyon-portfolio/` para el subdirectorio
+- El `base-href` está configurado en `/A-LeonardoPortfolio/` para el subdirectorio
 
 ## 📂 Estructura del proyecto
 
 ```
-a-lyon-portfolio/
+A-LeonardoPortfolio/
 ├── src/
 │   ├── app/
 │   │   ├── pages/
@@ -100,14 +100,14 @@ a-lyon-portfolio/
 
 Una vez desplegado, el portfolio estará disponible en:
 ```
-https://[tu-usuario].github.io/a-lyon-portfolio/
+https://[tu-usuario].github.io/A-LeonardoPortfolio/
 ```
 
 ## 👤 Autor
 
 **Leonardo Hernández**
-- LinkedIn: [linkedin.com/in/leonardo-hernandez](https://linkedin.com/in/leonardo-hernandez)
-- Email: leonardo.hernandez@email.com
+- LinkedIn: [linkedin.com/in/lyonproducertv/](https://www.linkedin.com/in/lyonproducertv/)
+- Email: hernandezleonardo085@gmail.com
 
 ## 📄 Licencia
 

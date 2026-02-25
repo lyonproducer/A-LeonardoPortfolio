@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "a-lyon-portfolio": {
+    "A-LeonardoPortfolio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -46,7 +46,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/a-lyon-portfolio/",
+              "baseHref": "/A-LeonardoPortfolio/",
               "budgets": [
                 {
                   "type": "initial",
@@ -73,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "a-lyon-portfolio:build:production"
+              "buildTarget": "A-LeonardoPortfolio:build:production"
             },
             "development": {
-              "buildTarget": "a-lyon-portfolio:build:development"
+              "buildTarget": "A-LeonardoPortfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
