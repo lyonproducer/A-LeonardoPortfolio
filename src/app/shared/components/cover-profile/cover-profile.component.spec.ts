@@ -1,4 +1,5 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideTranslateService, TranslatePipe } from '@ngx-translate/core';
 
 import { CoverProfileComponent } from './cover-profile.component';
 
@@ -6,12 +7,14 @@ describe('CoverProfileComponent', () => {
   let component: CoverProfileComponent;
   let fixture: ComponentFixture<CoverProfileComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ CoverProfileComponent ]
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [ TranslatePipe ],
+      declarations: [ CoverProfileComponent ],
+      providers: [ provideTranslateService({ fallbackLang: 'en' }) ]
     })
     .compileComponents();
-  }));
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(CoverProfileComponent);

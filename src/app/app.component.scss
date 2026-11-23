@@ -1,3 +1,13 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+app-navbar {
+  display: contents;
+}
+
 .banner-color {
   background: rgba(110, 207, 160, 1);
   background: -moz-linear-gradient(

@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader, provideTranslateHttpLoader } from '@ngx-translate/http-loader';
+import { provideAnimations } from '@angular/platform-browser/animations';
+import { provideHttpClient } from '@angular/common/http';
+import { provideTranslateService, TranslatePipe } from '@ngx-translate/core';
+import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
 import { MglTimelineModule } from 'angular-mgl-timeline';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -25,20 +25,21 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
     AppRoutingModule,
     SharedModule,
     RouterModule,
     MglTimelineModule,
-    TranslateModule.forRoot({
-      defaultLanguage: 'es'
-    })
+    TranslatePipe
   ],
   providers: [
-    provideTranslateHttpLoader({
-      prefix: 'assets/i18n/',
-      suffix: '.json'
+    provideAnimations(),
+    provideHttpClient(),
+    provideTranslateService({
+      fallbackLang: 'es',
+      loader: provideTranslateHttpLoader({
+        prefix: 'assets/i18n/',
+        suffix: '.json'
+      })
     })
   ],
   bootstrap: [AppComponent]

@@ -4,7 +4,7 @@ Portfolio personal de Leonardo Hernández - Desarrollador Full Stack
 
 ## 🚀 Tecnologías
 
-- **Frontend:** Angular, React, Vue, HTML5, CSS3, TypeScript, JavaScript
+- **Frontend:** Angular 22, React, Vue, HTML5, CSS3, TypeScript, JavaScript
 - **Backend:** Laravel, Node.js, Nest.js, Express
 - **Mobile:** Ionic, Capacitor, Flutter, Cordova
 - **Databases:** PostgreSQL, MySQL, SQL Server, MongoDB
@@ -12,6 +12,8 @@ Portfolio personal de Leonardo Hernández - Desarrollador Full Stack
 - **DevOps:** Git, Docker, AWS S3
 
 ## 📦 Instalación
+
+Requiere Node.js 24.15+ (o 22.22.3+). El repo incluye `.nvmrc`: ejecuta `nvm use` antes de instalar.
 
 ```bash
 npm install

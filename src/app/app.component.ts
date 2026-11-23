@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   standalone: false,
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
@@ -13,9 +14,6 @@ export class AppComponent {
   constructor(private translate: TranslateService) {
     // Establecer idiomas disponibles
     translate.addLangs(['es', 'en']);
-
-    // Establecer idioma por defecto
-    translate.setDefaultLang('es');
 
     // Recuperar idioma guardado o usar el idioma del navegador
     const savedLang = localStorage.getItem('selectedLanguage');

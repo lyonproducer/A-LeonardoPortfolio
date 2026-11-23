@@ -30,10 +30,4 @@ a {
 
 #myFooter {
   width: 100%;
-  position: fixed;
-  bottom: 0px;
-
-  @media screen and (max-width: 500px) {
-    position: relative;
-  }
 }

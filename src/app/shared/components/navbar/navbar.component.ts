@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class NavbarComponent implements OnInit {
@@ -16,7 +17,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
     // Sincronizar el idioma actual con el servicio
-    this.currentLang = this.translate.currentLang || this.translate.getDefaultLang() || 'es';
+    this.currentLang = this.translate.getCurrentLang() || 'es';
     this.translate.onLangChange.subscribe((event) => {
       this.currentLang = event.lang;
     });
