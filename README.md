@@ -52,7 +52,19 @@ npm run build
    Este comando:
    - Compila el proyecto en modo producción
    - Sube los archivos a la rama `gh-pages`
-   - Configura el base-href en `/A-LeonardoPortfolio/`
+   - Usa el `base-href` `/` porque el sitio se publica en el dominio propio `cv.lyonincode.com`
+
+### Dominio personalizado:
+
+El sitio se publica en **https://cv.lyonincode.com/**.
+
+En el DNS de `lyonincode.com` (Squarespace) debe existir este registro:
+
+| Tipo | Host | Valor |
+| --- | --- | --- |
+| CNAME | `cv` | `lyonproducer.github.io` |
+
+GitHub Pages toma el dominio del archivo `public/CNAME`, que se copia al build y a la rama `gh-pages`.
 
 ### Configuración de GitHub Pages:
 
@@ -62,13 +74,13 @@ npm run build
    - **Source:** Deploy from a branch
    - **Branch:** `gh-pages`
    - **Folder:** `/ (root)`
-4. Guarda los cambios
+   - **Custom domain:** `cv.lyonincode.com`
+4. Guarda los cambios y activa **Enforce HTTPS** cuando el certificado esté listo
 
 ### Notas importantes:
 
 - El archivo `.nojekyll` evita que GitHub Pages procese los archivos con Jekyll
-- La carpeta `docs/` está excluida en `.gitignore` para evitar conflictos
-- El `base-href` está configurado en `/A-LeonardoPortfolio/` para el subdirectorio
+- El `base-href` está configurado en `/` para el dominio propio
 
 ## 📂 Estructura del proyecto
 
@@ -100,9 +112,10 @@ A-LeonardoPortfolio/
 
 ## 🌐 URL del sitio
 
-Una vez desplegado, el portfolio estará disponible en:
+El portfolio está disponible en:
+
 ```
-https://[tu-usuario].github.io/A-LeonardoPortfolio/
+https://cv.lyonincode.com/
 ```
 
 ## 👤 Autor

@@ -46,7 +46,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/A-LeonardoPortfolio/",
+              "baseHref": "/",
               "budgets": [
                 {
                   "type": "initial",

@@ -4,10 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration production --base-href /A-LeonardoPortfolio/",
+    "build": "ng build --configuration production --base-href /",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy --base-href=/A-LeonardoPortfolio/ --name=lyonproducer --email=hernandezleonardo085@gmail.com"
+    "deploy": "ng deploy --base-href=/ --name=lyonproducer --email=hernandezleonardo085@gmail.com"
   },
   "private": true,
   "dependencies": {
